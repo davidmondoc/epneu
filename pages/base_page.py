@@ -1,7 +1,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from unittest import TestCase
-from epneu.chrome_browser import Browser
+from chrome_browser import Browser
 
 
 class Base_page(Browser, TestCase):

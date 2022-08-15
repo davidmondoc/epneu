@@ -1,10 +1,10 @@
 from chrome_browser import Browser
-from epneu.pages import home_page
+from pages import home_page
 
 
 def before_all(context):
     context.chrome = Browser()
-    context.homePage = home_page.Home_page()
+    context.homePage = home_page.HomePage()
 
 
 def after_all(context):
