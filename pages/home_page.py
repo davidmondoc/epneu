@@ -12,9 +12,7 @@ class HomePage(Base_page):
         self.chrome.get('https://www.e-pneu.ro/')
 
     def search_field(self):
-        self.chrome.find_element(*self.SEARCH_FIELD).send_keys('2354517')
-        sleep(2)
-        self.chrome.find_element(*self.SEARCH_FIELD).send_keys(' dunlop')
+        self.chrome.find_element(*self.SEARCH_FIELD).send_keys('2354517 dunlop')
         sleep(2)
 
     def search_btn(self):
