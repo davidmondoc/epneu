@@ -16,6 +16,11 @@ def step_impl(context):
     context.homePage.search_btn()
 
 
+@when('i select all-season tires')
+def step_impl(context):
+    context.homePage.all_season_selection()
+
+
 @when('i click on logo')
 def step_impl(context):
     context.homePage.logo_click()
