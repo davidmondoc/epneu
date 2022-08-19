@@ -1,6 +1,6 @@
 Feature: loging in account
   Background:
-    Given i am trying to login to my account
+    Given i am trying to login to my account but fail
     @test2
     Scenario:
       When i navigate to account login

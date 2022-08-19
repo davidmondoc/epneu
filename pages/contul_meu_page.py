@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 from pages.base_page import Base_page
-from time import sleep
 
 
 class Login(Base_page):
