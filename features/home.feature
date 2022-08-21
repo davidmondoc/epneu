@@ -7,3 +7,4 @@ Feature: testing home page
       When i select all-season tires
       When i click on logo
       Then i return to homepage
+

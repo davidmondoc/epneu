@@ -6,10 +6,10 @@ from selenium.webdriver.support.ui import Select
 class Ssb(Base_page):
     tireType = (By.ID, 'tab_auto')
     tireWidth = (By.ID, '1latime')
-    tireHeight = (By.ID, )
-    tireDiameter = (By.ID, )
-    tireProducer = (By.ID, )
-    tireSeason = (By.ID, )
+    tireHeight = (By.ID, '1inaltime')
+    tireDiameter = (By.ID, '1diametru')
+    tireProducer = (By.ID,'1brand' )
+    tireSeason = (By.ID, '1sezon')
     srcBtn = (By.XPATH, '//*[@id="cauta-anvelope-auto"]')
 
 
@@ -18,31 +18,35 @@ class Ssb(Base_page):
 
     def tiretype_src(self):
         self.chrome.find_element(*self.tireType).click()
-        sleep(5)
 
-    def tirewidth(self):
-        element=Select(self.chrome.find_element(*self.tireWidth))
+    def width(self):
+        self.chrome.find_element(*self.tireWidth).click()
+        element = Select(self.chrome.find_element(*self.tireWidth))
         element.select_by_visible_text('235')
-        sleep(5)
+
+    def height(self):
+        self.chrome.find_element(*self.tireHeight).click()
+        element = Select(self.chrome.find_element(*self.tireHeight))
+        element.select_by_visible_text('45')
+
+    def diameter(self):
+        self.chrome.find_element(*self.tireDiameter).click()
+        element = Select(self.chrome.find_element(*self.tireDiameter))
+        element.select_by_visible_text('17')
+
+    def producer(self):
+        self.chrome.find_element(*self.tireProducer).click()
+        element = Select(self.chrome.find_element(*self.tireProducer))
+        element.select_by_visible_text('FALKEN')
+
+    def season(self):
+        self.chrome.find_element(*self.tireSeason).click()
+        element = Select(self.chrome.find_element(*self.tireSeason))
+        element.select_by_visible_text('Iarna')
 
     def clicksrc(self):
         self.chrome.find_element(*self.srcBtn).click()
-        sleep(3)
-'''
-    def tireheight(self):
-        self.chrome.find_element(*self.tireHeight)
 
-    def tirediameter(self):
-        self.chrome.find_element(*self.tireDiameter)
 
-    def tireproducer(self):
-        self.chrome.find_element(*self.tireProducer)
-
-    def tireseason(self):
-        self.chrome.find_element(*self.tireSeason)
-
-    def clicksrc(self):
-        self.chrome.find_element(*self.srcBtn).click()
-'''
 
 
