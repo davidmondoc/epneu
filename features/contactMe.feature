@@ -1,7 +1,7 @@
 Feature: testing contact me function
   Background:
     Given i want to be contacted
-    @test4
+    @test3
     Scenario:
     When i click on contact me button
     When i type in my name

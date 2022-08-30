@@ -1,7 +1,7 @@
 Feature: loging in account
   Background:
     Given i am trying to login to my account but fail
-    @test2
+    @test4
     Scenario:
       When i navigate to account login
       When i type in my email

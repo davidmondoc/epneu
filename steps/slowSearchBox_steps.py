@@ -1,9 +1,9 @@
 from behave import *
 
 
-@given('i am using another methode to search for tires')
-def step_impl(context):
-    context.ssb.site_acces()
+# @given('i am an e-pneu user')
+# def step_impl(context):
+#     context.ssb.site_acces()
 
 
 @when('i click on tire type')
