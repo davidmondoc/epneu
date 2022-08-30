@@ -6,7 +6,7 @@ class HomePage(Base_page):
     EPNEU_LINK = (By.XPATH, '/html/body/div[2]/div/div[1]/div[2]/div/div[1]/a/img')
     SEARCH_FIELD = (By.ID, 'search1')
     SEARCH_BTN = (By.CLASS_NAME, 'button')
-    ALL_SEASON = (By.XPATH, '//*[@id="narrow-by-list-0"]/dd[2]/ol/li[1]/a')
+    ALL_SEASON = (By.CSS_SELECTOR, 'a[class="m-checkbox-unchecked"]')
 
     def site_acces(self):
         self.chrome.get('https://www.e-pneu.ro/')

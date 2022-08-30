@@ -1,6 +1,7 @@
 Feature: testing home page
   Background:
     Given i am an e-pneu user
+    @test1
     Scenario:
       When i type in search field
       When i search for tires

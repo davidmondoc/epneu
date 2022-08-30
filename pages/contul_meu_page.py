@@ -1,15 +1,16 @@
 from selenium.webdriver.common.by import By
 from pages.base_page import Base_page
+from time import sleep
 
 
 class Login(Base_page):
     ACCOUNT_PAGE = (By.XPATH, '/html/body/div[2]/div/div[1]/div[1]/div/div[4]/div[2]/a')
-    USER = (By.XPATH, '//*[@id="email"]')
-    PASSWORD = (By.XPATH, '//*[@id="pass"]')
+    USER = (By.ID, 'email')
+    PASSWORD = (By.ID, 'pass')
     FORGOT_PASS = (By.LINK_TEXT, 'Ai uitat parola?')
     GO_BACK = (By.XPATH, '//*[@id="form-validate"]/div[2]/p[2]/a')
     ERRORMSG = (By.XPATH, '//*[@id="advice-required-entry-pass"]')
-    AUTENTIFICARE = (By.XPATH, '//*[@id="send2"]')
+    AUTENTIFICARE = (By.NAME, 'send')
 
     def site_acces(self):
         self.chrome.get('https://www.e-pneu.ro/')

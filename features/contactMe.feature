@@ -6,5 +6,5 @@ Feature: testing contact me function
     When i click on contact me button
     When i type in my name
     When i type in my phone no.
-    When i type in my email adress
+    When i type in my email address
     Then i send request
