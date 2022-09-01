@@ -1,11 +1,6 @@
 from behave import *
 
 
-# @given('i am an e-pneu user')
-# def step_impl(context):
-#     context.ssb.site_acces()
-
-
 @when('i click on tire type')
 def step_impl(context):
     context.ssb.tiretype_src()
@@ -34,6 +29,7 @@ def step_impl(context):
 @when('i click on producer selection')
 def step_impl(context):
     context.ssb.producer()
+
 
 @then('i initiate search')
 def step_impl(context):
