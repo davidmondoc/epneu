@@ -28,6 +28,3 @@ class Contact_me(Base_page):
     def click_send(self):
         self.chrome.find_element(*self.send_btn).click()
         self.alerts_acceptance()
-
-
-
